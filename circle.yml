@@ -15,6 +15,6 @@ deployment:
   master:
     branch: master
     commands:
-      - docker login -u bomilvangjensen -p $DOCKER_PASSWORD
+      - docker login -u bomilvangjensen -p $DOCKER_PASSWORD -e milvang@astro.ku.dk
       - docker tag devops_web bomilvangjensen/devops
       - docker push bomilvangjensen/devops
